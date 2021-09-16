@@ -8,6 +8,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * @author Jmc
  */
@@ -49,5 +51,18 @@ public class UserController {
             return R.fail()
                     .msg("获取失败，端口号：" + serverPort);
         }
+    }
+
+    @GetMapping("/hystrix/ok")
+    public String hystrixOk() {
+        return "线程名称: " + Thread.currentThread().getName() + ", OK!";
+    }
+
+    @GetMapping("/hystrix/timeout")
+    public String hystrixTimeout() throws InterruptedException {
+        int delaySecs = 3;
+        TimeUnit.SECONDS.sleep(delaySecs);
+        return "线程名称: " + Thread.currentThread().getName()
+                + ", 耗时" + delaySecs + "秒!";
     }
 }
