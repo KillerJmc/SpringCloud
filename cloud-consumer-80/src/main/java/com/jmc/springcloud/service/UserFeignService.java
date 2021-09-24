@@ -10,14 +10,14 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@FeignClient(value = "cloud-user-service", path = "/user")
+@FeignClient(value = "cloud-user-service")
 public interface UserFeignService {
-    @PostMapping("/insert")
+    @PostMapping("/user/insert")
     R insert(User user);
 
     /**
      * 注意一定要写value = ""
      */
-    @GetMapping("/get/{id}")
+    @GetMapping("/user/get/{id}")
     R getById(@PathVariable(value = "id") Integer id);
 }

@@ -1,0 +1,39 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: cloud-gateway-service
+
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          # enables DiscoveryClient gateway integration
+          enabled: true
+
+      routes:
+        - id: user-route
+          # uri: http://localhost:8001
+          uri: lb://cloud-user-service
+
+          predicates:
+            # 需要匹配
+            - Path=/user/get/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka, http://localhost:7002/eureka
+
+  instance:
+    # eureka中显示的状态名称
+    instance-id: gateway-9527
+    # 当光标移到状态名称时，优先显示ip地址，而不是主机名
+    prefer-ip-address: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

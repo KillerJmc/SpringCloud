@@ -9,19 +9,19 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
 import java.net.URI;
+import java.util.concurrent.TimeUnit;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/user")
 public class UserController {
     private final UserFeignService userFeignService;
 
-    @GetMapping("/insert")
+    @GetMapping("/user/insert")
     public R insert(User user) {
         return userFeignService.insert(user);
     }
 
-    @GetMapping("/get/{id}")
+    @GetMapping("/user/get/{id}")
     public R getById(@PathVariable Integer id) {
         return userFeignService.getById(id);
     }
