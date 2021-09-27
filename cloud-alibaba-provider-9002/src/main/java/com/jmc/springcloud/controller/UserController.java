@@ -46,8 +46,7 @@ public class UserController {
                     .msg("获取成功，端口号：" + serverPort)
                     .data(res);
         } else {
-            return R.fail()
-                    .msg("获取失败，端口号：" + serverPort);
+            throw new NullPointerException();
         }
     }
 }

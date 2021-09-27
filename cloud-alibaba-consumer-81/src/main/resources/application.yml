@@ -4,3 +4,8 @@ server:
 spring:
   application:
     name: cloud-user-consumer
+
+# 开启openfeign对sentinel的支持
+feign:
+  sentinel:
+    enabled: true

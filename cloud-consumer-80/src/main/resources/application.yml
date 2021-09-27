@@ -1,6 +1,16 @@
 server:
-  port: 81
+  port: 80
 
 spring:
   application:
     name: cloud-user-consumer
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka, http://localhost:7002/eureka
+  instance:
+    # eureka中显示的状态名称
+    instance-id: user-consumer
+    # 当光标移到状态名称时，优先显示ip地址，而不是主机名
+    prefer-ip-address: true
