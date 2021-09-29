@@ -23,15 +23,17 @@
         <module>cloud-alibaba-provider-9001</module>
         <module>cloud-alibaba-provider-9002</module>
         <module>cloud-alibaba-consumer-81</module>
+        <module>cloud-alibaba-seata-order-service-9101</module>
+        <module>cloud-alibaba-seata-storage-service-9102</module>
+        <module>cloud-alibaba-seata-user-service-9103</module>
     </modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <maven-plugin.version>2.5.4</maven-plugin.version>
 
-        <spring-boot.version>2.5.4</spring-boot.version>
-        <spring-cloud.version>2020.0.3</spring-cloud.version>
+        <spring-boot.version>2.5.5</spring-boot.version>
+        <spring-cloud.version>2020.0.4</spring-cloud.version>
         <alibaba-cloud.version>2021.1</alibaba-cloud.version>
         <mybatis-plus.version>3.4.3</mybatis-plus.version>
     </properties>
@@ -81,7 +83,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>${maven-plugin.version}</version>
+                <version>${spring-boot.version}</version>
             </plugin>
         </plugins>
     </build>

@@ -1,0 +1,17 @@
+server:
+  port: 9103
+
+spring:
+  application:
+    name: user-service
+
+  datasource:
+    url: jdbc:mysql:///user_db
+    username: root
+    password: root
+
+  cloud:
+    alibaba:
+      seata:
+        tx-service-group: my_test_tx_group
+

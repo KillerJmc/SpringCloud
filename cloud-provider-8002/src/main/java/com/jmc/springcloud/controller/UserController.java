@@ -31,7 +31,7 @@ public class UserController {
                     .msg("插入数据库成功，端口号：" + serverPort)
                     .data(res);
         } else {
-            return R.fail()
+            return R.error()
                     .msg("插入数据库失败，端口号：" + serverPort);
         }
     }
@@ -46,7 +46,7 @@ public class UserController {
                     .msg("获取成功，端口号：" + serverPort)
                     .data(res);
         } else {
-            return R.fail()
+            return R.error()
                     .msg("获取失败，端口号：" + serverPort);
         }
     }

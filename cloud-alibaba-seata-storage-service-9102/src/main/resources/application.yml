@@ -1,0 +1,17 @@
+server:
+  port: 9102
+
+spring:
+  application:
+    name: storage-service
+
+  datasource:
+    url: jdbc:mysql:///storage_db
+    username: root
+    password: root
+
+  cloud:
+    alibaba:
+      seata:
+        tx-service-group: my_test_tx_group
+

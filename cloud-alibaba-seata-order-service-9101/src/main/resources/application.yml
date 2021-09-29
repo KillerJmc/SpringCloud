@@ -1,0 +1,17 @@
+server:
+  port: 9101
+
+spring:
+  application:
+    name: order-service
+
+  datasource:
+    url: jdbc:mysql:///order_db
+    username: root
+    password: root
+
+  cloud:
+    alibaba:
+      seata:
+        tx-service-group: my_test_tx_group
+
