@@ -11,5 +11,5 @@ import org.springframework.web.bind.annotation.RequestParam;
 @FeignClient(value = "user-service", path = "/user")
 public interface UserService {
     @PostMapping("/consume")
-    R consume(@RequestParam("userId") Integer userId, @RequestParam("money") Double money);
+    R consume(@RequestParam("id") Integer id, @RequestParam("money") Double money);
 }

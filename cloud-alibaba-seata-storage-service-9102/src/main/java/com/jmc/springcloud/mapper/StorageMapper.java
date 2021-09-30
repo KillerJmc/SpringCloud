@@ -12,6 +12,6 @@ import org.apache.ibatis.annotations.Update;
  */
 @Mapper
 public interface StorageMapper extends BaseMapper<Storage> {
-    @Update("update t_storage set residue = residue - #{arg1} where product_id = #{arg0}")
-    void decrease( Integer productId, Integer orderCount);
+    @Update("update t_storage set residue = residue - #{arg1} where id = #{arg0}")
+    void decrease(Integer id, Integer orderCount);
 }

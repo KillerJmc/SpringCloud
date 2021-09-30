@@ -15,7 +15,7 @@ public class UserServiceImpl implements UserService {
     private final UserMapper storageMapper;
 
     @Override
-    public void consumer(Integer userId, Double money) {
-        storageMapper.consumer(userId, money);
+    public void consumer(Integer id, Double money) {
+        storageMapper.consumer(id, money);
     }
 }

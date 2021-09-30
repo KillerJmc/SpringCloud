@@ -6,5 +6,5 @@ import com.jmc.springcloud.rest.R;
  * @author Example
  */
 public interface StorageService {
-    void decrease(Integer productId, Integer orderCount);
+    void decrease(Integer id, Integer orderCount);
 }

@@ -22,3 +22,6 @@ seata:
     vgroup-mapping:
       jmc_tx_group: default
 
+feign:
+  sentinel:
+    enabled: true

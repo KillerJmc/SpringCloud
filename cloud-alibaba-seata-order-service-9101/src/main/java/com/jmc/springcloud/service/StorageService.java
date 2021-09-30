@@ -12,5 +12,5 @@ import org.springframework.web.bind.annotation.RequestParam;
 @FeignClient(value = "storage-service", path = "/storage")
 public interface StorageService {
     @PostMapping("/decrease")
-    R decrease(@RequestParam("productId") Integer productId, @RequestParam("orderCount") Integer orderCount);
+    R decrease(@RequestParam("id") Integer id, @RequestParam("orderCount") Integer orderCount);
 }

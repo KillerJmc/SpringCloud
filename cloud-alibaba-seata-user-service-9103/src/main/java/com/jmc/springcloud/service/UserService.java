@@ -5,5 +5,5 @@ package com.jmc.springcloud.service;
  * @author Example
  */
 public interface UserService {
-    void consumer(Integer userId, Double money);
+    void consumer(Integer id, Double money);
 }

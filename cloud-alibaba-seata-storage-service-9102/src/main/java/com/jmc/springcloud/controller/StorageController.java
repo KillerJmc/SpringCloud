@@ -19,8 +19,8 @@ public class StorageController {
     private final StorageService storageService;
 
     @PostMapping("/decrease")
-    R decrease(Integer productId, Integer orderCount) {
-        storageService.decrease(productId, orderCount);
+    R decrease(Integer id, Integer orderCount) {
+        storageService.decrease(id, orderCount);
         log.info("库存减少了：" + orderCount);
         return R.ok()
                 .msg("库存减少了：" + orderCount);

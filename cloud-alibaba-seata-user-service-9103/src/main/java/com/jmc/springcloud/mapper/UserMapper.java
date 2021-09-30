@@ -11,5 +11,5 @@ import org.apache.ibatis.annotations.Update;
 @Mapper
 public interface UserMapper extends BaseMapper<User> {
     @Update("update t_user set balance = balance - #{arg1} where id = #{arg0}")
-    void consumer(Integer userId, Double money);
+    void consumer(Integer id, Double money);
 }
