@@ -22,10 +22,11 @@ public class UserController {
     private final UserService userService;
 
     @PostMapping("/consume")
-    @SuppressWarnings("all")
     R consume(Integer userId, Double money) {
         // 模拟支付异常
-        if (true) throw new RuntimeException();
+        if (money < 0) {
+            throw new RuntimeException("金额错误！");
+        }
 
         userService.consumer(userId, money);
         log.info("用户支付金额：" + money);

@@ -13,5 +13,12 @@ spring:
   cloud:
     alibaba:
       seata:
-        tx-service-group: my_test_tx_group
+        # 选择事务组
+        tx-service-group: jmc_tx_group
+
+seata:
+  service:
+    # 创建事务组，组内包含多个服务
+    vgroup-mapping:
+      jmc_tx_group: default
 
