@@ -1,7 +1,5 @@
 package com.jmc.springcloud.service;
 
-import com.jmc.springcloud.rest.R;
-
 /**
  * @author Example
  */

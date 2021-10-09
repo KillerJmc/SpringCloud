@@ -1,10 +1,9 @@
 package com.jmc.springcloud.service.impl;
 
+import com.jmc.springcloud.mapper.UserMapper;
 import com.jmc.springcloud.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-
-import com.jmc.springcloud.mapper.UserMapper;
 
 /**
  * @author Example

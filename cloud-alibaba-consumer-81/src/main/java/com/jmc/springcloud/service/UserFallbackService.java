@@ -1,7 +1,7 @@
 package com.jmc.springcloud.service;
 
+import com.jmc.net.R;
 import com.jmc.springcloud.pojo.User;
-import com.jmc.springcloud.rest.R;
 import org.springframework.stereotype.Component;
 
 @Component

@@ -1,10 +1,8 @@
 package com.jmc.springcloud.mapper;
 
-import com.jmc.springcloud.pojo.Storage;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.jmc.springcloud.rest.R;
+import com.jmc.springcloud.pojo.Storage;
 import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Update;
 
 /**

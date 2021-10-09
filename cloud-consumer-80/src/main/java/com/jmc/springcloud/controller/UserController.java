@@ -1,16 +1,13 @@
 package com.jmc.springcloud.controller;
 
+import com.jmc.net.R;
 import com.jmc.springcloud.pojo.User;
-import com.jmc.springcloud.rest.R;
 import com.jmc.springcloud.service.UserFeignService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.cloud.client.ServiceInstance;
-import org.springframework.cloud.client.discovery.DiscoveryClient;
-import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor

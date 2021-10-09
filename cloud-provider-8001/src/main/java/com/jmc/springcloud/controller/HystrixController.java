@@ -55,6 +55,7 @@ public class HystrixController {
     /**
      * 降级方法
      */
+    @SuppressWarnings("unused")
     public String hystrixFallback() {
         return "线程名称: " + Thread.currentThread().getName()
                 + ", 系统繁忙或者运行报错，请稍后再试QAQ";

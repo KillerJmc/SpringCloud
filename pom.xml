@@ -36,6 +36,7 @@
         <spring-cloud.version>2020.0.4</spring-cloud.version>
         <alibaba-cloud.version>2021.1</alibaba-cloud.version>
         <mybatis-plus.version>3.4.3</mybatis-plus.version>
+        <jmc-utils.version>1.6.0</jmc-utils.version>
     </properties>
 
     <dependencyManagement>
@@ -74,6 +75,12 @@
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-boot-starter</artifactId>
                 <version>${mybatis-plus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.jmc</groupId>
+                <artifactId>jmc-utils</artifactId>
+                <version>${jmc-utils.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

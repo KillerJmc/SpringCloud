@@ -1,8 +1,7 @@
 package com.jmc.springcloud.service;
 
+import com.jmc.net.R;
 import com.jmc.springcloud.pojo.User;
-import com.jmc.springcloud.rest.R;
-import org.springframework.cloud.openfeign.FallbackFactory;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

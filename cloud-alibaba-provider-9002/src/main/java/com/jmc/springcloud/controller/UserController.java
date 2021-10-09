@@ -1,7 +1,7 @@
 package com.jmc.springcloud.controller;
 
+import com.jmc.net.R;
 import com.jmc.springcloud.pojo.User;
-import com.jmc.springcloud.rest.R;
 import com.jmc.springcloud.service.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

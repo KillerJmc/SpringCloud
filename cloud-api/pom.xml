@@ -11,7 +11,6 @@
     </parent>
 
     <artifactId>cloud-api</artifactId>
-    <packaging>pom</packaging>
 
     <dependencies>
         <dependency>
@@ -20,8 +19,8 @@
         </dependency>
 
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
+            <groupId>com.jmc</groupId>
+            <artifactId>jmc-utils</artifactId>
         </dependency>
     </dependencies>
 

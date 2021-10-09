@@ -1,17 +1,13 @@
 package com.jmc.springcloud.controller;
 
-import com.alibaba.csp.sentinel.annotation.SentinelResource;
-import com.alibaba.csp.sentinel.slots.block.BlockException;
+import com.jmc.net.R;
 import com.jmc.springcloud.pojo.User;
-import com.jmc.springcloud.rest.R;
 import com.jmc.springcloud.service.UserFeignService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.concurrent.TimeUnit;
 
 @RestController
 @RequiredArgsConstructor
