@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Update;
 
 /**
- * @author Example
+ * @author Jmc
  */
 @Mapper
 public interface StorageMapper extends BaseMapper<Storage> {

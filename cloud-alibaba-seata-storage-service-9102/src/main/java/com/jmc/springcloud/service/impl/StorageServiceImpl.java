@@ -6,7 +6,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 /**
- * @author Example
+ * @author Jmc
  */
 @Service
 @RequiredArgsConstructor

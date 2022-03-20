@@ -6,15 +6,15 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 /**
- * @author Example
+ * @author Jmc
  */
 @Service
 @RequiredArgsConstructor
 public class UserServiceImpl implements UserService {
-    private final UserMapper storageMapper;
+    private final UserMapper userMapper;
 
     @Override
     public void consumer(Integer id, Double money) {
-        storageMapper.consumer(id, money);
+        userMapper.consumer(id, money);
     }
 }

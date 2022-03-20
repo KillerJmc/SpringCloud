@@ -2,7 +2,7 @@ package com.jmc.springcloud.service;
 
 
 /**
- * @author Example
+ * @author Jmc
  */
 public interface UserService {
     void consumer(Integer id, Double money);

@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 /**
- * @author Example
+ * @author Jmc
  */
 @Data
 @TableName("t_user")

@@ -5,7 +5,7 @@ import com.jmc.springcloud.pojo.User;
 import org.springframework.stereotype.Component;
 
 @Component
-public class UserFallbackService implements UserFeignService {
+public class UserClientFallback implements UserClient {
     @Override
     public R insert(User user) {
         return R.error()
