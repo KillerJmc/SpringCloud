@@ -14,12 +14,6 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.jmc.springcloud</groupId>
-            <artifactId>cloud-api</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-
-        <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-stream-rabbit</artifactId>
         </dependency>
@@ -42,6 +36,11 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.jmc</groupId>
+            <artifactId>jmc-utils</artifactId>
         </dependency>
     </dependencies>
 

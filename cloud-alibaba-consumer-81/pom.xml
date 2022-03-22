@@ -14,12 +14,6 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.jmc.springcloud</groupId>
-            <artifactId>cloud-api</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-
-        <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
@@ -47,6 +41,16 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.jmc</groupId>
+            <artifactId>jmc-utils</artifactId>
         </dependency>
     </dependencies>
 
